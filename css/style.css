@@ -31,7 +31,7 @@ h1 {
 nav {
     /*background-color: burlywood;*/
     margin-left: auto;
-    width: 40%;
+    width: 100%;
 }
 
 main {
@@ -131,6 +131,7 @@ li a:hover {
     nav {
         height: 64px;
         align-items: center;
+        width: 45%;
     }
 
     .article-container {
