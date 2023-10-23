@@ -13,8 +13,14 @@ body {
 
 header {
     background-color: cadetblue;
+    position: sticky;
     display: flex;
-    padding: 1rem;
+
+}
+
+header img {
+    width: 256px;
+    height: 64px;
 }
 
 h1 {
@@ -23,8 +29,9 @@ h1 {
 }
 
 nav {
-    background-color: burlywood;
-    width: 60%;
+    /*background-color: burlywood;*/
+    margin-left: auto;
+    width: 40%;
 }
 
 main {
@@ -43,16 +50,22 @@ section{
 
 section h2 {
     width: 100%;
+    text-align: center;
 }
 
 article {
-    background-color: indianred;
+    background-color: grey;
     width: 100%;
-    padding: 1rem;
     box-sizing: border-box;
+    padding: 1rem;
+}
+
+article p {
+    padding-right: 2rem;
 }
 
 figure {
+    background-color: grey;
 }
 
 img {
@@ -62,6 +75,7 @@ img {
 
 figcaption {
     font-weight: 100;
+    background-color: grey;
 }
 
 aside {
@@ -80,17 +94,16 @@ ul {
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
-    padding: 0;
     margin: 0;
-
 }
 
 li {
     width: calc(100% / 3);
+    padding-top: 0.5rem;
 }
 
 li a {
-    background-color: darkblue;
+    /*background-color: darkblue;*/
     color: floralwhite;
     width: 100%;
     display: block;
@@ -108,11 +121,31 @@ li a:hover {
         width: 80%;
     }
 
+    header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        height: 64px;
+    }
+
+    nav {
+        height: 64px;
+        align-items: center;
+    }
+
+    .article-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3rem;
+    }
+
     article {
-        width: calc(100% / 3);
+        width: calc(33.3% - 2rem);
+        margin: 1rem;
     }
 
     li {
         width: 10rem;
+        padding: 0.5rem 0 0;
     }
 }
