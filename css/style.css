@@ -1,3 +1,13 @@
+:root {
+    --primary-bg-color: #27374D;
+    --secondary-bg-color: #526D82;
+    --text-color: #000;
+    --link-color: #0000ed;
+    --hover-color: #3B5998;
+    --section-bg-color: #9DB2BF;
+    --article-bg-color: #DDE6ED;
+}
+
 html {
     font-family: 'Montserrat', Verdana, Helvetica, sans-serif;
 }
@@ -9,10 +19,12 @@ html {
 
 body {
     margin: 0;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
 }
 
 header {
-    background-color: cadetblue;
+    background-color: var(--secondary-bg-color);
     top: 0;
     width: 80%;
     display: flex;
@@ -27,17 +39,22 @@ header img {
 nav {
     margin-left: auto;
     width: 100%;
+    background-color: var(--secondary-bg-color);
 }
 
 main {
-    background-color: #9c9cac;
+    background-color: var(--section-bg-color);
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
 }
 
-section{
-    background-color: gold;
+#home {
+    margin-bottom: 20rem;
+}
+
+section {
+    background-color: var(--section-bg-color);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -82,7 +99,7 @@ section h2 {
 }
 
 article {
-    background-color: grey;
+    background-color: var(--article-bg-color);
     width: 100%;
     box-sizing: border-box;
     padding: 1rem;
@@ -97,7 +114,7 @@ article p {
 }
 
 figure {
-    background-color: grey;
+    background-color: var(--article-bg-color);
 }
 
 article img {
@@ -106,8 +123,8 @@ article img {
 }
 
 figcaption {
+    background-color: var(--article-bg-color);
     font-weight: 100;
-    background-color: grey;
 }
 
 aside {
@@ -144,11 +161,15 @@ li a {
 }
 
 li a:hover {
-    background-color: #0000ed;
+    background-color: var(--hover-color);
 }
 
 h3 {
-    margin-bottom: 2rem; /* Add some space below the heading */
+    margin-bottom: 2rem;
+}
+
+#contact-us {
+    margin-top: 20rem;
 }
 
 .contact-us h3 {
@@ -162,13 +183,8 @@ h3 {
 }
 
 .contact-us-map {
-    margin-left: auto;
-    margin-right: 5rem;
-    margin-bottom: 5rem ;
-    margin-top: 5rem ;
+    margin: 5rem 5rem 5rem auto;
 }
-
-
 
 @media screen and (min-width: 769px) {
     .container {
